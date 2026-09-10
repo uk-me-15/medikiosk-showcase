@@ -1,0 +1,229 @@
+/* DO NOT CHANGE */
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+/* DO NOT CHANGE */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* MediKiosk clinical theme — teal #0F766E / navy #0F172A / soft slate #F8FAFC */
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.978 0.004 247.9);
+  --foreground: oklch(0.21 0.042 265);
+  --card: oklch(0.995 0.002 247);
+  --card-foreground: oklch(0.21 0.042 265);
+  --popover: oklch(0.995 0.002 247);
+  --popover-foreground: oklch(0.21 0.042 265);
+  --primary: oklch(0.511 0.081 194.8);
+  --primary-foreground: oklch(0.985 0.005 190);
+  --secondary: oklch(0.955 0.014 195);
+  --secondary-foreground: oklch(0.32 0.05 210);
+  --muted: oklch(0.955 0.006 240);
+  --muted-foreground: oklch(0.482 0.028 255);
+  --accent: oklch(0.945 0.022 185);
+  --accent-foreground: oklch(0.35 0.06 205);
+  --destructive: oklch(0.5 0.19 20);
+  --border: oklch(0.906 0.009 247);
+  --input: oklch(0.906 0.009 247);
+  --ring: oklch(0.511 0.081 194.8);
+  --chart-1: oklch(0.511 0.081 194.8);
+  --chart-2: oklch(0.31 0.05 262);
+  --chart-3: oklch(0.79 0.14 75);
+  --chart-4: oklch(0.55 0.2 18);
+  --chart-5: oklch(0.62 0.12 155);
+  --sidebar: oklch(0.99 0.003 247);
+  --sidebar-foreground: oklch(0.21 0.042 265);
+  --sidebar-primary: oklch(0.511 0.081 194.8);
+  --sidebar-primary-foreground: oklch(0.985 0.005 190);
+  --sidebar-accent: oklch(0.955 0.014 195);
+  --sidebar-accent-foreground: oklch(0.32 0.05 210);
+  --sidebar-border: oklch(0.906 0.009 247);
+  --sidebar-ring: oklch(0.511 0.081 194.8);
+}
+
+.dark {
+  --background: oklch(0.17 0.03 262);
+  --foreground: oklch(0.96 0.005 240);
+  --card: oklch(0.21 0.034 262);
+  --card-foreground: oklch(0.96 0.005 240);
+  --popover: oklch(0.21 0.034 262);
+  --popover-foreground: oklch(0.96 0.005 240);
+  --primary: oklch(0.7 0.12 182);
+  --primary-foreground: oklch(0.15 0.03 262);
+  --secondary: oklch(0.26 0.035 250);
+  --secondary-foreground: oklch(0.93 0.01 220);
+  --muted: oklch(0.26 0.03 255);
+  --muted-foreground: oklch(0.68 0.02 250);
+  --accent: oklch(0.3 0.05 200);
+  --accent-foreground: oklch(0.93 0.02 190);
+  --destructive: oklch(0.62 0.2 20);
+  --border: oklch(0.3 0.03 255);
+  --input: oklch(0.3 0.03 255);
+  --ring: oklch(0.7 0.12 182);
+  --chart-1: oklch(0.7 0.12 182);
+  --chart-2: oklch(0.75 0.1 262);
+  --chart-3: oklch(0.8 0.14 75);
+  --chart-4: oklch(0.65 0.2 18);
+  --chart-5: oklch(0.7 0.12 155);
+  --sidebar: oklch(0.21 0.034 262);
+  --sidebar-foreground: oklch(0.96 0.005 240);
+  --sidebar-primary: oklch(0.7 0.12 182);
+  --sidebar-primary-foreground: oklch(0.15 0.03 262);
+  --sidebar-accent: oklch(0.26 0.035 250);
+  --sidebar-accent-foreground: oklch(0.93 0.01 220);
+  --sidebar-border: oklch(0.3 0.03 255);
+  --sidebar-ring: oklch(0.7 0.12 182);
+}
+
+/* MediKiosk theme extensions */
+@theme {
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --animate-eq: eq 0.9s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 1.6s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+  --animate-scanline: scanline 1.5s ease-in-out infinite;
+  --animate-blink: blink 1s step-end infinite;
+  --animate-floaty: floaty 6s ease-in-out infinite;
+}
+
+@keyframes eq {
+  0%,
+  100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.55);
+    opacity: 0.65;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+@keyframes scanline {
+  0% {
+    top: 4%;
+  }
+  50% {
+    top: 92%;
+  }
+  100% {
+    top: 4%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: oklch(0.511 0.081 194.8 / 0.2);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.82 0.015 245);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer utilities {
+  /* Hairline clinical grid used behind hero / section bands */
+  .bg-grid-faint {
+    background-image:
+      linear-gradient(to right, oklch(0.45 0.06 220 / 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(0.45 0.06 220 / 0.055) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .glow-teal {
+    background: radial-gradient(
+      42rem 24rem at 50% 0%,
+      oklch(0.6 0.1 190 / 0.16),
+      transparent 70%
+    );
+  }
+  .text-shadow-navy {
+    text-shadow: 0 1px 0 oklch(0.2 0.04 262 / 0.35);
+  }
+}
