@@ -220,6 +220,19 @@ export const AYUSH_STEPS: AyushOption[] = [
   },
 ];
 
+/* Fallback AYUSH panel shown on the physician console when the kiosk session
+   didn't capture AYUSH findings (e.g. allopathic intake). */
+export const AYUSH_FALLBACK: AyushFinding[] = [
+  { key: "prakriti", label: "Prakriti (Constitution)", value: "Pitta–Kapha" },
+  { key: "vikriti", label: "Vikriti (Imbalance)", value: "Pitta vriddhi" },
+  { key: "agni", label: "Agni (Digestive fire)", value: "Tikshna (sharp)" },
+  { key: "ahara", label: "Ahara (Diet)", value: "2 meals, spicy & late" },
+  { key: "vihara", label: "Vihara (Lifestyle)", value: "Sedentary, late nights" },
+  { key: "mala", label: "Mala (Elimination)", value: "Irregular, acidic" },
+  { key: "nadi", label: "Nadi (Pulse)", value: "Pitta nadi" },
+  { key: "jihva", label: "Jihva (Tongue)", value: "Yellowish coating" },
+];
+
 /* ------------------------------------------------------------------ */
 /* Vitals                                                              */
 /* ------------------------------------------------------------------ */
